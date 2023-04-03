@@ -121,6 +121,11 @@ header nav div a:hover{
     font-size: 110px;
     
 }
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .offer .heading{
     font-family: 'Open Sans', sans-serif;
     color: #eb841a;
@@ -246,6 +251,12 @@ header nav div a:hover{
     transition: opacity .25s;
 }
 
+
+
+.offer.nd .heading{
+    font-size: 80px;
+    
+}
 
 footer{
     grid-row: -2/-1;
