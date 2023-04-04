@@ -116,6 +116,11 @@ header{
     text-align: center;
 }
 
+.txt1 a{
+    color: #f58718;
+    text-decoration: none;
+}
+
 
 .img1{
     grid-row: span 1;

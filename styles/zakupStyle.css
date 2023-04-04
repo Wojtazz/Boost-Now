@@ -11,7 +11,7 @@ body{
     width: 940px;
     margin: 20px auto;
     display: grid;
-    grid-template-rows: 100px 300px 300px 100px;
+    grid-template-rows: 100px 300px 220PX 100px;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
 }
@@ -106,7 +106,7 @@ header nav div a:hover{
     grid-row: 2/-2;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 300px 220px;
     gap: 20px;
     
 }
@@ -144,9 +144,21 @@ header nav div a:hover{
     gap: 20px;
 }
 .name{
-    grid-column: 1/-1;
+    grid-column: 1/5;
     grid-row: 1/2;
     font-size: 72px;
+    align-self: center;
+    padding-top: 20px;
+    
+}
+.price{
+    grid-column: 5/-1;
+    grid-row: span 1;
+    font-size: 60px;
+    padding-top: 20px;
+    
+    align-self: center;
+    text-align: center;
 }
 
 .buyingSpace{
@@ -265,6 +277,97 @@ header nav div a:hover{
     cursor: default;
     opacity: .24;
   }
+
+.content .IMG{
+    padding-top: 10px;
+    grid-column: span 1;
+    grid-row: span 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .IMG img{
+    filter:  drop-shadow(0 0 0.8rem #bf8827);
+    
+}
+.txt2{
+    grid-row: span 1;
+    grid-column: 2 / 4;
+    background-color: #403d3a;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 80px;
+    gap: 20px;
+    font-size: 25px;
+    
+}
+p{
+    margin: 0;
+    padding: 0;
+    grid-column: span 1;
+    grid-row: 2/-1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+.img2 img{
+    width: 60%;
+}
+.img4 img{
+    width: 90%;
+}
+.txt3{
+    grid-row: span 1;
+    grid-column: span 2;
+    background-color: #403d3a;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 80px;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.txt4{
+    grid-row: span 1;
+    grid-column: span 2;
+    background-color: #403d3a;
+    font-size: 24px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 80px;
+    gap: 20px;
+}
+
+.txt5{
+    grid-row: span 1;
+    grid-column: span 2;
+    background-color: #403d3a;
+    font-size: 22px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 80px;
+    gap: 20px;
+}
+
+.txt6{
+    grid-row: span 1;
+    grid-column: span 2;
+    background-color: #403d3a;
+    font-size: 21.5px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 80px;
+    gap: 20px;
+}
 
 footer{
     grid-row: -2/-1;
