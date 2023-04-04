@@ -11,7 +11,7 @@ body{
     width: 940px;
     margin: 20px auto;
     display: grid;
-    grid-template-rows: 100px repeat(3, 320px) 100px;
+    grid-template-rows: 100px 300px 300px 100px;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
 }
@@ -100,184 +100,17 @@ header nav div a:hover{
     -ms-transform: scale(1.15);
 }
 
+
 .content{
     grid-column: 1/-1;
     grid-row: 2/-2;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 320px);
+    grid-template-rows: 300px 300px;
     gap: 20px;
-}
-.offer{
-    display: grid;
-    grid-column: 1/-1;
-    grid-row: span 1;
     background-color: #403d3a;
-    border-radius: 30px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 150px 170px;
-}
-.offer.st .heading{
-    font-size: 110px;
-    
-}
-.heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.offer .heading{
-    font-family: 'Open Sans', sans-serif;
-    color: #eb841a;
-    filter: drop-shadow(0 0 13px rgba(235, 132, 26, 0.5));
-    text-align: center;
-    grid-column: 1/-1;
-    grid-row: span 1;
 }
 
-.offer .products{
-    grid-column: 1/-1;
-    grid-row: span 1;
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 150px 20px;
-}
-
-
-.product1{
-    grid-row: 1/-1;
-    grid-column: 3/5;
-    display: flex;
-    justify-content: center;
-    
-}
-.curtain1{
-    grid-column: 3/5;
-    grid-row: 1/2;
-    z-index: 3;
-    margin-left: 7px;
-    margin-right: 7px;
-    border-radius: 20px;
-    border: 2px solid black;
-    background-color: rgb(68, 66, 66);
-    opacity: .5;
-    transition: opacity .25s;
-}
-
-.curtain1:hover{
-    opacity: 0;
-    transition: opacity .25s;
-}
-
-
-.products img{
-    
-    width: 140px;
-    height: 150px;
-    filter: drop-shadow(7px -2px 7px rgba(0, 0, 0, 0.4));
-    border-radius: 20px;
-    
-}
-.product2{
-    grid-row: 1/-1;
-    grid-column: 5/7;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.content a{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.curtain2{
-    grid-column: 5/7;
-    grid-row: 1/2;
-    z-index: 3;
-    margin-left: 7px;
-    margin-right: 7px;
-    border-radius: 20px;
-    border: 2px solid black;
-    background-color: rgb(68, 66, 66);
-    opacity: .5;
-    transition: opacity .25s;
-}
-
-.curtain2:hover{
-    opacity: 0;
-    transition: opacity .25s;
-}
-.product3{
-    grid-row: 1/-1;
-    grid-column: 7/9;
-    display: flex;
-    justify-content: center;
-    
-}
-.curtain3{
-    grid-column: 7/9;
-    grid-row: 1/2;
-    z-index: 3;
-    margin-left: 7px;
-    margin-right: 7px;
-    border-radius: 20px;
-    border: 2px solid black;
-    background-color: rgb(68, 66, 66);
-    opacity: .5;
-    transition: opacity .25s;
-}
-
-.curtain3:hover{
-    opacity: 0;
-    transition: opacity .25s;
-}
-.product4{
-    grid-row: 1/-1;
-    grid-column: 9/11;
-    display: flex;
-    justify-content: center;
-    
-}
-.curtain4{
-    grid-column: 9/11;
-    grid-row: 1/2;
-    z-index: 3;
-    margin-left: 7px;
-    margin-right: 7px;
-    border-radius: 20px;
-    border: 2px solid black;
-    background-color: rgb(68, 66, 66);
-    opacity: .5;
-    transition: opacity .25s;
-}
-
-.curtain4:hover{
-    opacity: 0;
-    transition: opacity .25s;
-}
-
-
-
-.offer.nd .heading, .offer.rd .heading{
-    font-size: 80px;
-    
-}
-
-.offer.rd .product1{
-    grid-column: 5/9;
-    grid-row: 1/-1;
-}
-.offer.rd .curtain1{
-    grid-column: 5/9;
-    grid-row: 1/2;
-    z-index: 3;
-    margin-right: 5px;
-}
-.offer.rd img{
-    width: 299px;
-}
 
 footer{
     grid-row: -2/-1;
