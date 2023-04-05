@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/kontaktStyle.css">
+        <link rel="stylesheet" href="../styles/kontoStyle.css">
         <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
         <link rel="manifest" href="../favicon/site.webmanifest">
-        <script src="../scripts/kontaktScript.js" defer></script>
-        <title>Kontakt</title>
+        <script src="../scripts/kontoScript.js" defer></script>
+        <title>Konto</title>
     </head>
     <body>
         <div class="container">
@@ -20,25 +20,26 @@
                     <div class="headerTxt1"><a href="oferta.html">OFERTA</a></div>
                     <div class="headerTxt2"><a href="kontakt.html">KONTAKT</a></div>
                     <div class="headerTxt3"><a href="pomoc.html">POMOC</a></div>
-                    <div class="headerTxt4"><a href="konto.html">KONTO</a></div>
+                    <div class="headerTxt4"><a href="#">KONTO</a></div>
                 </nav>
                 
             </header>
            
 
             <div class="content">
-               <form>
+               <div class="login">
+                    <form>
+                        <p>Email:</p>
+                        <div class="gradientBorderInput"><input type="text" placeholder="Email" required></div>
+                        <p>Hasło:</p>
+                        <div class="gradientBorderInput"><input type="password" placeholder="Hasło" required></div><br>
+                        <div class="gradientBorderSubmit"><input type="submit" value="Zaloguj się" onclick="errorAlert()"></div>
                     
-                    <div class="inputField">
-                        <p class="ques">Czego chcesz się dowiedzieć?</p><br>
-                        <div class="gradientBorderInput" id="gradientBackground" style="margin-bottom: 10px;"><input type="text" placeholder="Email" required></div>
-                        <div class="gradientBorderInput" id="gradientBackground"><input type="text" placeholder="Temat" required></div><br>
-                        <div class="gradientBorderTextarea"><textarea name="question"cols="60" rows="5" placeholder="Treść zgłoszenia" required></textarea></div><br>
-                        <div class="toCenter"><div class="gradientBorderSubmit"><input type="submit" value="Prześlij"></div></div><br>
-                        <p class="thanks">Dzięki twoim zgłoszeniom jesteśmy w stanie stale ulepszać naszą działalność. Dzięki!</p>
-                    </div>
+                    </form>
                     
-               </form>
+               </div>
+               <div class="register"></div>
+
             </div>
 
             <footer>

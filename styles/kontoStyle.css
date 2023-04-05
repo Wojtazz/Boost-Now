@@ -101,67 +101,42 @@ header nav div a:hover{
     -ms-transform: scale(1.15);
 }
 
+
 .content{
-    grid-row: 2/-2;
     grid-column: 1/-1;
+    grid-row: 2/-2;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 610px;
     gap: 20px;
     background-color: #403d3a;
 }
-form{
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 20px;
-}
-.ques{
-    font-size: 40px;
-    
-}
-.inputField{
-    grid-column: 3/-1;
-    grid-row: 1/-1;
-}
-input[type="text"]
+
+input[type="text"], input[type="password"]
 {
-    font-size: 20px;
-    background-color: #272727;
+    width: 200px;
+    font-size: 16px;
     border: none;
+    outline: none;
     border-radius: 10px;
     padding: 5px;
+    background-color: #272727;
     color: white;
-    outline: none;
-    width: 212px;
-
 }
 .gradientBorderInput{
-    border-radius: 10px;
-    width: 222px;
+    width: 210px;
     padding: 2px;
     background: linear-gradient(to right bottom, #e26f2d 0, #e04b05 100%);
-}
-textarea{
-    resize: none;
-    max-width: 500px;
-    font-size: 18px;
-    font-family: 'Lato';
-    outline: none;
-    background-color: #272727;
-    border: none;
     border-radius: 10px;
-    color: white;
-    margin: 0;
-    padding: 5px;
 }
-.gradientBorderTextarea{
-    border-radius: 10px;
-    width: 510px;
-    padding: 2px;
-    background: linear-gradient(to right bottom, #e26f2d 0, #e04b05 100%);
+.login p{
+    font-size: 30px;
+    margin: 5px;
+}
+.login{
+    grid-column: 1/7;
+    align-self: center;
+    justify-self: center;
 }
 
 input[type="submit"]
@@ -182,14 +157,7 @@ input[type="submit"]
     border-radius: 10px;
     margin: 0 auto;
 }
-.toCenter{
-    width: 514px;
-}
-.thanks{
-    width: 514px;
-    font-size: 25px;
-    
-}
+
 
 
 footer{
