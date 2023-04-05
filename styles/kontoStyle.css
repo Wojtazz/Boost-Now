@@ -160,6 +160,33 @@ input[type="submit"]
 
 
 
+.register{
+    grid-column: 7/-1;
+    color: #d1d1d1;
+    justify-self: center;
+    align-self: center;
+}
+.register b{
+    font-size: 35px;
+    color: white;
+}
+.register p{
+    margin: 5px;
+}
+ul{
+    padding-left: 30px;
+}
+.register .gradientBorderSubmit{
+    width: 150px;
+}
+.register input[type="submit"]
+{
+    width: 150px;
+}
+.toCenter{
+    width: 214px;
+}
+
 footer{
     grid-row: -2/-1;
     grid-column: 1 / -1;
